@@ -37,27 +37,32 @@
         <form style="max-width:690px ;margin:auto;" action="results.html" method="get" novalidate>
             <label for="firstName" class="sr-only">First Name</label>
             <div class="input-group has-validation">
-                <input type="text" id="firstName" name="firstName" class="form-control">
+                <input type="text" id="firstName" name="firstName" class="form-control" required>
                 <div class="invalid-feedback">
                     Please input firstName
                 </div>
             </div>
             <label for="surname" class="sr-only">Surname</label>
             <div class="input-group has-validation">
-                <input type="text" id="surname" name="surname" class="form-control"> 
+                <input type="text" id="surname" name="surname" class="form-control" required> 
                 <div class="invalid-feedback">
                     Please input surname
                 </div>
             </div>
             <label for="email" class="sr-only">Email Address</label>
             <div class="input-group has-validation">
-                <input type="text" id="emailAddress" name="emailAddress" class="form-control mb-3">
+                <input type="text" id="emailAddress" name="emailAddress" class="form-control mb-3" required>
                 <div class="invalid-feedback">
                     Please input email
                 </div>
             </div>
-            <input type="text" id="emailAddress" name="emailAddress" class="form-control mb-3">
             <label type="text" class="sr-only">Comment</label>
+            <div class="input-group has-validation">
+                <textarea id="comment" name="comment" class="form-control mb-3" rows="7" required></textarea>
+                <div class="invalid-feedback">
+                    Please input a comment
+                </div>
+            </div>
             <textarea id="comment" name="comment" class="form-control mb-3" rows="7"></textarea>
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="urgency" id="casual">
